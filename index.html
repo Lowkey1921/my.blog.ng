@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- side bar-->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+  </div>
+  <div class="hea"> Lowkey.FXT</div>
+  <!-- Tabs -->
+  <button class="tablinka" onclick="openPage('Home', this, '#FF5733')">Forex</button>
+  <button class="tablinkb" onclick="openPage('News', this, '#FFC300')" id="defaultOpen">Day FX </button>
+  <button class="tablinkc" onclick="openPage('Contact', this, '#C70039')">Bitcion</button>
+  <button class="tablinkd" onclick="openPage('About', this, '#249EFF')">Crypto</button>
+  <!-- Forex-->
+  <div id="Home" class="tabcontent">
+    <div class="letl"> <span class="emo">👋</span> Let's learn Forex Trading together! <br><br>
+      <hr>
+    </div>
+    <img class="candle" src="./Candlestick .PNG">
+    <div class="fxt"> Forex Trading</div>
+    <button class="fxbasics" href=""> Forex Trading Basics</button>
+    
+    <img src="./IMG_9156basi.PNG" class="fxbasicsimage">
+  </div>
+  <!-- DayFx-->
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+  </div>
+  <!-- Bitcoin-->
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+  <!-- crypto-->
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+  <button> onclick</button>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>

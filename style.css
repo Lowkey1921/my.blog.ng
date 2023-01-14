@@ -1,0 +1,294 @@
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  position: fixed;
+  left: 0px;
+  top: -1px;
+  width: 100%;
+  height: 15%;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  z-index: 9;
+}
+
+.openbtn:hover {
+  background-color:
+    black;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+
+/* Tabs nav
+Set height of body and the document to 100% to enable "full page tabs" */
+body,
+html {
+  height: 20000px;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablinka {
+  position: fixed;
+  top: 14%;
+  background-color: #FF5733;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.tablinka:hover {
+  background-color: #FF5733;
+}
+
+
+.tablinkb {
+  position: fixed;
+  left: 95px;
+  top: 14%;
+  background-color: #FFC300;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 25%;
+  z-index: 1;
+}
+
+.tablinkb:hover {
+  background-color: #FFC300;
+}
+
+
+.tablinkc {
+  position: fixed;
+  top: 14%;
+  left: 190px;
+  background-color: #C70039;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 25%;
+  z-index: 1;
+}
+
+.tablinkc:hover {
+  background-color: #C70039;
+}
+
+
+.tablinkd {
+  position: fixed;
+  top: 14%;
+  left: 285px;
+  background-color: #249EFF;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 25%;
+  z-index: 1;
+}
+
+.tablinkd:hover {
+  background-color: #249EFF;
+}
+
+
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {
+  background-color:
+    #FF5733;
+}
+
+#News {
+  background-color: #FFC300;
+}
+
+#Contact {
+  background-color: #C70039;
+}
+
+#About {
+  background-color: #249EFF;
+}
+
+/* heading , name of the app */
+.hea {
+  position: fixed;
+  top: 35px;
+  left: 33%;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: impact;
+  z-index: 9;
+  color: white;
+
+}
+
+/* Forex front-End element*/
+.letl {
+  position: absolute;
+  font-size: 30px;
+  top: 30%;
+  font-family: Arail;
+  color: white;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.emo {
+  position: absolute;
+  font-size: 30px;
+  top: 9%;
+  left: -20px;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+hr {
+  position: absolute;
+  color: white;
+  width: 100%;
+  left: -10px;
+}
+
+.candle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 57%;
+}
+
+.fxt {
+  position: absolute;
+  top: 59%;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  left: 100px;
+}
+
+.fxbasics {
+  position: absolute;
+  top: 70%;
+  height: 100px;
+  width: 89%;
+  background-color: #FF5733;
+  color: white;
+  border-radius: 10px;
+  border: solid 0px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  box-shadow: -2px -0.9px 15px -2px #333436;
+}
+
+
+.fxbasicsimage {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 74%;
+  left: 50px;
+}
